@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download | OpenShare-File Sharing App</title>
+</head>
+<body>
+    <%if(locals.error){%>
+    <h4><%=locals.error%>    Hmmm......</h4>
+    <%}else{%>
+    <h2>Your File is ready to be downloaded from the below link</h2>
+    <h4>Download Link  : 
+       <button style="height: 50px;width: 150px;cursor: pointer;background-color: rgb(160, 153, 250);color: white; border-radius: 4%;text-decoration-color:none;border: none;text-wrap: initial;"><a href="<%=locals.downloadLink%>" style="cursor: pointer;text-decoration-color: white; font-weight: 400;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: large;font-display:inherit ;">Download File</a></button>     </h4>
+
+    <h4>Filename  : 
+        <%=locals.fileName%>
+    </h4>
+    <p>Link will get Expire in 24 hours.Please download your file.</p>
+    <% } %>
+</body>
+</html>
