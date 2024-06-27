@@ -9,7 +9,7 @@ connectDB();
 
 app.use(
     cors({
-        origin:'https://openshareapp.onrender.com'
+        origin:'https://open-share-app.vercel.app/'
     })
 )
 app.use(express.static('public'))
