@@ -23,7 +23,9 @@ app.set('view engine','ejs')
 app.use('/api/files',require('./routes/files'))
 app.use('/files',require('./routes/show'));
 app.use('/files/download',require('./routes/download'))
-
+app.get('/',(req,res)=>{
+    return res.json({message :"You are on Home Page ,Right Now!!"}) 
+})
 
 
 app.listen(PORT,()=>{
