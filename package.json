@@ -2,7 +2,7 @@
   "name": "openshare-filesharingapp",
   "version": "1.0.0",
   "description": "This is a simple file sharing app",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
     "serve": "node server.js"
