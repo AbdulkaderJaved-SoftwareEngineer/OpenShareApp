@@ -24,6 +24,6 @@ app.get('/',(req,res)=>{
     return res.json({message:"Hello"})
 })
 
-app.listen(PORT,()=>{
-    console.log(`Server Up and running ...${PORT}`);
+app.listen(4000,()=>{
+    console.log(`Server Up and running ...`);
 });
