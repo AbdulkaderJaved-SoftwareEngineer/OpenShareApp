@@ -8,6 +8,9 @@ const PORT = process.env.PORT || 3000; // PORT is the main  port where the serve
 connectDB();
 
 
+
+app.use(cors({origin:'https://open-share-app-file-sharing.vercel.app'}))
+
 app.use(express.static('public'))
 
 //Template Engine
