@@ -24,6 +24,6 @@ app.get('/',(req,res)=>{
     return res.json({message:"Hello"})
 })
 
-app.listen(4000,()=>{
+app.listen(3000,()=>{
     console.log(`Server Up and running ...`);
 });
