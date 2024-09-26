@@ -7,11 +7,18 @@ const PORT = process.env.PORT || 3000; // PORT is the main  port where the serve
 
 connectDB();
 
+// CORS options
+const corsOptions = {
+    origin: 'https://open-share-app-file-sharing.vercel.app', // Allow this origin to access the API
+    methods: ['GET', 'POST', 'OPTIONS'], // Allowed methods
+    allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
+    credentials: true, // Allow cookies to be sent
+    optionsSuccessStatus: 200 // Some legacy browsers choke on 204
+};
 
+app.use()
 
-app.use(cors({origin:'https://open-share-app-file-sharing.vercel.app'}))
-
-app.use(express.static('public'))
+app.use(cors(corsOptions));
 
 //Template Engine
 app.set('views',path.join(__dirname,'/views'));
